@@ -1,7 +1,18 @@
 html {
     position: relative;
     min-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
+ body{
+    text-align: center;
+ }
+                    /*Parte do menu*/
 *{
     margin: 0; 
     padding: 0;
@@ -30,8 +41,8 @@ html {
     border-radius: 10px;
     background:#c7e8fc;
     color:#000000;
-    -moz-box-shadow:0 3px 10px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    box-shadow:0 3px 10px 0 #CCC;
+    box-shadow:0 3px 10px 0 #ccc;
     text-shadow:0px 0px 5px #ffffff;
     }
 .menu li  ul{
@@ -41,9 +52,232 @@ html {
     background-color:#fff;
     display:none;
 }
-header,footer {
+                /*Pagina Principal*/
+                /*Div Home: Cuidados Mentais*/
+section.container1{
+    top: 20%;
+    transform: translate(0, 60%);
+    position: relative;
+    height: 10em;
+}
+.sessao{
+    width: 600px;
+    max-width: 600px;
+    margin: auto;
+    padding: auto;
+}
+
+                /*Botao Saiba mais*/
+@media only screen and (max-width: 330px) {
+.saibaM{
+    width: 250px;
+    margin: 0 auto;
+    }
+}
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #555454;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.393),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    
+  }
+  .btn-3 {
+    background: #c7e8fc;
+    background: linear-gradient(0deg, rgba(199,232,252,1) 0%, rgb(161, 203, 245) 90%);
+    width: 80px;
+    height: 30px;
+    line-height: 15px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
     width: 100%;
-    padding: 10px;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(102, 164, 226);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+    background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+    color: #c7e8fc;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #c7e8fc;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+                    /*Botoes de cuidados-ansiedade-depressao-estresse*/
+
+.btn_cuidados {
+    color: #000000;
+    border: 2px solid rgb(158, 219, 226);
+    border-radius: 10px;
+    padding: 12px 25px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #aeddf5;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+  .slide_down:hover {
+    box-shadow: inset 0 100px 0 0 #99c1df;
+}
+.btn_ansiedade{
+    color: #000000;
+    border: 2px solid rgb(158, 219, 226);
+    border-radius: 10px;
+    padding: 12px 25px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #aeddf5;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+.btn_depressao{
+    color: #000000;
+    border: 2px solid rgb(158, 219, 226);
+    border-radius: 10px;
+    padding: 12px 25px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #aeddf5;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+.btn_estresse{
+    color: #000000;
+    border: 2px solid rgb(158, 219, 226);
+    border-radius: 10px;
+    padding: 12px 25px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #aeddf5;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+                    /*Pagina Saude Mental*/
+
+.pag2{
+    top: 10%;
+    transform: translate(0, 60%);
+    position: absolute;
+    height: 10em;
+}
+
+/*Parte Depressão*/
+
+.artigo1 {
+    flex: 1; 
+    order: 2;
+    background-color: #e9e9e9;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.artigo2{
+    flex: 1; 
+    order: 2;
+    background-color: #e9e9e9;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.artigo3{
+    flex: 1; 
+    order: 2;
+    background-color: #e9e9e9;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+                    /*Parte do footer*/
+header,footer {
+    font-size: 12px;
+    width: 100%;
+    padding: 5px;
     position: absolute;
     bottom: 0;
     display: flex;
