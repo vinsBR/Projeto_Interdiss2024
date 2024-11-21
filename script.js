@@ -22,3 +22,12 @@ function estresse() {
     document.getElementById("texPincipal").innerHTML = 
     "O estresse é a resposta do corpo a pressões diárias, seja no trabalho, estudos ou relações pessoais. Em excesso, ele pode causar sintomas como dores de cabeça, cansaço e irritabilidade, afetando tanto a saúde física quanto mental. Aprender a reconhecer os sinais e encontrar maneiras de relaxar é essencial para evitar o desgaste e manter o equilíbrio. Cuidar do estresse é cuidar de si mesmo.";
 }
+
+const iniciarBtn = document.getElementById('iniciarBtn');
+const circle = document.querySelector('.circle');
+
+
+iniciarBtn.addEventListener('click', function() {
+    circle.style.display = 'block'; 
+    circle.classList.add('animar'); 
+});
