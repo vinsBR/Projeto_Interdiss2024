@@ -1,14 +1,14 @@
 html {
-    position: relative;
+    /* position: relative; */
     min-height: 100%;
     width: 100%;
     height: 100%;
     overflow: auto;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: radial-gradient(circle, #f0f0f0, #888888);
+    background: radial-gradient(circle, #f0f0f0, #bcbcbc);
 
     
  }
@@ -25,7 +25,7 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(189, 234, 248);
     list-style: none;
-    float: left;
+    /* float: left; */
     height: 35px;
     width: 100%;
 }
@@ -60,8 +60,8 @@ html {
 main.container1{
     top: 20%;
     transform: translate(0, 20%);
-    /* position: relative; */
-    /* height: 10em; */
+    /* position: relative;
+    height: 10em; */
 }
 .sessao{
     width: 600px;
@@ -101,7 +101,6 @@ main.container1{
     7px 7px 20px 0px rgba(0,0,0,.1),
     4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
-    
   }
   .btn-3 {
     background: #c7e8fc;
@@ -110,8 +109,7 @@ main.container1{
     height: 30px;
     line-height: 15px;
     padding: 0;
-    border: none;
-    
+    border: none; 
   }
   .btn-3 span {
     position: relative;
@@ -178,7 +176,6 @@ main.container1{
 .bt-container{
   position: relative;
 }
-
 .btn_cuidados {
     color: #000000;
     border: 2px solid rgb(158, 219, 226);
@@ -247,9 +244,11 @@ main.container1{
 
 .pag2{
     top: 10%;
-    transform: translate(0, 60%);
-    position: absolute;
-    height: 10em;
+    /* transform: translate(0, 60%); */
+    position: relative;
+    flex-direction: row;
+    /* height: 10em; */
+    display: flex;
 }
 
 /*Parte Depressão*/
@@ -287,6 +286,7 @@ footer {
     padding: 5px;
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     background: rgb(189, 234, 248);
     color: #000000;
