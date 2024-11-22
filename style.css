@@ -57,11 +57,11 @@ html {
 }
                 /*Pagina Principal*/
                 /*Div Home: Cuidados Mentais*/
-section.container1{
+main.container1{
     top: 20%;
-    transform: translate(0, 60%);
-    position: relative;
-    height: 10em;
+    transform: translate(0, 20%);
+    /* position: relative; */
+    /* height: 10em; */
 }
 .sessao{
     width: 600px;
@@ -175,12 +175,16 @@ section.container1{
 
                     /*Botoes de cuidados-ansiedade-depressao-estresse*/
 
+.bt-container{
+  position: relative;
+}
+
 .btn_cuidados {
     color: #000000;
     border: 2px solid rgb(158, 219, 226);
     border-radius: 10px;
     padding: 12px 25px;
-    display: inline-block;
+    /* display: inline-block; */
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 12px;
     letter-spacing: 1px;
@@ -198,7 +202,7 @@ section.container1{
     border: 2px solid rgb(158, 219, 226);
     border-radius: 10px;
     padding: 12px 25px;
-    display: inline-block;
+    /* display: inline-block; */
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 12px;
     letter-spacing: 1px;
@@ -213,7 +217,7 @@ section.container1{
     border: 2px solid rgb(158, 219, 226);
     border-radius: 10px;
     padding: 12px 25px;
-    display: inline-block;
+    /* display: inline-block; */
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 12px;
     letter-spacing: 1px;
@@ -228,7 +232,7 @@ section.container1{
     border: 2px solid rgb(158, 219, 226);
     border-radius: 10px;
     padding: 12px 25px;
-    display: inline-block;
+    /* display: inline-block; */
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 12px;
     letter-spacing: 1px;
@@ -277,15 +281,13 @@ section.container1{
     border-radius: 10px;
 }
                     /*Parte do footer*/
-header,footer {
+footer {
     font-size: 12px;
     width: 100%;
     padding: 5px;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: rgb(189, 234, 248);
     color: #000000;
     box-sizing: border-box;
