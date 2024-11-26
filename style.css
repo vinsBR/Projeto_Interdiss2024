@@ -58,8 +58,7 @@ html {
                 /*Pagina Principal*/
                 /*Div Home: Cuidados Mentais*/
 main.container1{
-    top: 20%;
-    transform: translate(0, 20%);
+    /* transform: translate(0, 20%); */
     /* position: relative;
     height: 10em; */
 }
@@ -246,14 +245,47 @@ main.container1{
     top: 10%;
     /* transform: translate(0, 60%); */
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     /* height: 10em; */
     display: flex;
 }
 
 /*Parte Depressão*/
 
-.artigo1 {
+.containerDepre{
+  display: flex;
+  flex-direction: row;
+}
+.artigo1_1 {
+    flex: 1; 
+    order: 1;
+    background-color: #e9e9e9;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.artigo1_2 {
+  flex: 1; 
+  order: 2;
+  background-color: #e9e9e9;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.artigo1_3 {
+  flex: 1; 
+  order: 3;
+  background-color: #e9e9e9;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.containerAnsi{
+  display: flex;
+  flex-direction: row;
+}
+.artigo2_1{
     flex: 1; 
     order: 2;
     background-color: #e9e9e9;
@@ -261,8 +293,28 @@ main.container1{
     padding: 20px;
     border-radius: 10px;
 }
+.artigo2_2{
+  flex: 1; 
+  order: 2;
+  background-color: #e9e9e9;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.artigo2_3{
+  flex: 1; 
+  order: 2;
+  background-color: #e9e9e9;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-.artigo2{
+.containerEstre{
+  display: flex;
+  flex-direction: row;
+}
+.artigo3_1{
     flex: 1; 
     order: 2;
     background-color: #e9e9e9;
@@ -270,14 +322,21 @@ main.container1{
     padding: 20px;
     border-radius: 10px;
 }
-
-.artigo3{
-    flex: 1; 
-    order: 2;
-    background-color: #e9e9e9;
-    margin: 5px;
-    padding: 20px;
-    border-radius: 10px;
+.artigo3_2{
+  flex: 1; 
+  order: 2;
+  background-color: #e9e9e9;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.artigo3_3{
+  flex: 1; 
+  order: 2;
+  background-color: #e9e9e9;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
 }
                     /*Parte do footer*/
 footer {
