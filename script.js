@@ -31,3 +31,33 @@ iniciarBtn.addEventListener('click', function() {
     circle.style.display = 'block'; 
     circle.classList.add('animar'); 
 });
+
+document.getElementById('submit-btn').addEventListener('click', function () {
+    const form = document.getElementById('quiz-form');
+    const formData = new FormData(form);
+
+    let depressionScore = 0;
+    let anxietyScore = 0;
+    let stressScore = 0;
+
+    for (let [key, value] of formData.entries()) {
+        const questionNumber = parseInt(key.substring(1));
+        const score = parseInt(value);
+
+        if (questionNumber <= 5) {
+            depressionScore += score;
+        } else if (questionNumber <= 10) {
+            anxietyScore += score;
+        } else {
+            stressScore += score;
+        }
+    }
+
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `
+        <h2>Resultados:</h2>
+        <p>Depressão: ${depressionScore}</p>
+        <p>Ansiedade: ${anxietyScore}</p>
+        <p>Estresse: ${stressScore}</p>
+    `;
+});

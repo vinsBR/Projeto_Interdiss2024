@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styleTestes.css">
+    <script src="testes.js"></script>
     <title>Teste</title>
 </head>
 <body>
@@ -18,9 +19,158 @@
             <li><a href="profissional.html">Profissionais</a></li>
         </ul>
     </nav>
-   
-    <footer>
-        <a>Direitos reservados - Saude Mental Corp<span>&#169;</span></a>
-    </footer>
+    
+    <div class="container">
+        <h1>Teste de Saúde Mental</h1>
+        <p>Responda às perguntas abaixo para verificar sinais de depressão, ansiedade e estresse.</p>
+
+        <form id="quiz-form">
+            <!-- Perguntas sobre Depressão -->
+            <fieldset id="depression-questions">
+                <legend>Depressão</legend>
+                <label for="q1">1. Nas últimas duas semanas, com que frequência você se sentiu triste, desanimado ou sem esperança?</label>
+                <select id="q1" name="q1">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q2">2. Nas últimas duas semanas, com que frequência você perdeu o interesse ou prazer em atividades que antes gostava?</label>
+                <select id="q2" name="q2">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q3">3. Nas últimas duas semanas, com que frequência você se sentiu cansado ou sem energia?</label>
+                <select id="q3" name="q3">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q4">4. Nas últimas duas semanas, com que frequência você teve dificuldade para se concentrar ou tomar decisões?</label>
+                <select id="q4" name="q4">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q5">5. Nas últimas duas semanas, com que frequência você teve pensamentos de que seria melhor não estar vivo?</label>
+                <select id="q5" name="q5">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+            </fieldset>
+
+            <!-- Perguntas sobre Ansiedade (inicialmente ocultas) -->
+            <fieldset id="anxiety-questions" style="display: none;">
+                <legend>Ansiedade</legend>
+                <label for="q6">6. Nas últimas duas semanas, com que frequência você se sentiu tenso?</label>
+                <select id="q6" name="q6">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q7">7. Nas últimas duas semanas, com que frequência você se sentiu inquieto ou incapaz de ficar parado?</label>
+                <select id="q7" name="q7">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q8">8. Nas últimas duas semanas, com que frequência você se sentiu preocupado com coisas que poderiam dar errado?</label>
+                <select id="q8" name="q8">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q9">9. Nas últimas duas semanas, com que frequência você teve dificuldade para se concentrar devido a preocupações?</label>
+                <select id="q9" name="q9">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q10">10. Nas últimas duas semanas, com que frequência você teve sensações físicas como coração acelerado, suor excessivo ou dificuldade para respirar?</label>
+                <select id="q10" name="q10">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+            </fieldset>
+
+            <!-- Perguntas sobre Estresse (inicialmente ocultas) -->
+            <fieldset id="stress-questions" style="display: none;">
+                <legend>Estresse</legend>
+                <label for="q11">11. Nas últimas duas semanas, com que frequência você se sentiu sobrecarregado pelas suas responsabilidades?</label>
+                <select id="q11" name="q11">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q12">12. Nas últimas duas semanas, com que frequência você teve dificuldade para relaxar?</label>
+                <select id="q12" name="q12">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q13">13. Nas últimas duas semanas, com que frequência você se sentiu irritado ou impaciente?</label>
+                <select id="q13" name="q13">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q14">14. Nas últimas duas semanas, com que frequência você teve dificuldade para dormir por causa de preocupações?</label>
+                <select id="q14" name="q14">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+
+                <label for="q15">15. Nas últimas duas semanas, com que frequência você sentiu dores de cabeça, dores musculares ou outros sintomas físicos relacionados ao estresse?</label>
+                <select id="q15" name="q15">
+                    <option value="0">Nunca</option>
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                </select>
+            </fieldset>
+
+            <!-- Botões -->
+            <button type="button" id="next-button">Próximas Perguntas</button>
+            <button type="button" id="submit-button" style="display: none;">Ver Resultado</button>
+        </form>
+
+        <div id="result" style="display: none;">
+            <h2>Resultado</h2>
+            <p>Seu diagnóstico é:</p>
+            <div id="result-output"></div>
+
+            <div id="velocimeter">
+                <canvas id="speedometer"></canvas>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
