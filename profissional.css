@@ -91,7 +91,7 @@ html {
 /* Seção de Profissionais */
 #profissionais {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: var(#888);
     padding: 20px;
 }
